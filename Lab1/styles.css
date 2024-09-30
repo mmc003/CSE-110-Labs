@@ -63,6 +63,13 @@ li a:hover {
     padding: 16px 16px;
 }
 
+#subscribe {
+    background-image: url(bg-orbs-1.jpg);
+    color: white;
+    scroll-margin-top: 46.5px;
+    padding: 16px 16px;
+}
+
 .grid {
     display: grid;
     gap: 25px;
