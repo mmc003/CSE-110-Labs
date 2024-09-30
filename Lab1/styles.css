@@ -7,7 +7,7 @@
     top: 0;
 }    
 h2 {
-    margin: 0;
+    margin-top: 0;
 }
 div {
     display: inline-block;
@@ -76,4 +76,30 @@ li a:hover {
     color: white;
     max-height: 500px;
     overflow: scroll;
+    margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+    li a {
+        display: none;
+    }
+
+    #navlogo {
+        max-width: 50%;
+    }
+    
+    h2 {
+        font-size: 24px;
+
+    }
+    
+    p {
+        font-size: 20px;
+    }
+
+    .grid {
+        display: grid;
+        gap: 25px;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
