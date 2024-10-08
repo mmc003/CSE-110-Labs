@@ -73,6 +73,28 @@
                                   <p>Content: ${content}</p>
                                   <p>Label: ${label}</p>`;
        });
+       document.getElementById("title").addEventListener("focus", function () {
+           this.style.backgroundColor = "#e0f7fa";  // Light blue background on focus
+       });
+
+       document.getElementById("title").addEventListener("blur", function () {
+           this.style.backgroundColor = "";  // Reset background on blur
+       });
+
+       document.getElementById("content").addEventListener("focus", function () {
+           this.style.backgroundColor = "#e0f7fa";  // Light blue background on focus
+       });
+
+       document.getElementById("content").addEventListener("blur", function () {
+           this.style.backgroundColor = "";  // Reset background on blur
+       });
+       
+       document.getElementById("title").addEventListener("input", function () {
+           const len = this.value.length;
+           if (len > 50) {
+            alert("Title cannot exceed more than 50 characters!")
+           }
+       });
    </script>
 </body>
 
